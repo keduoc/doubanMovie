@@ -19,7 +19,6 @@ html,body{
 body{
     position: relative;
     font-size: 12px;
-    /*line-height: 1.2px;*/
     background: #fff;
     fill: #ff5722;
 }
@@ -46,7 +45,7 @@ section .search-area{
     position: relative;
 }
 section .search-area input {
-    width: calc(100% - 50px);
+    width: calc(100% - 45px);
     padding: 8px;
     background-color: #eee;
     border: none;
@@ -89,8 +88,6 @@ section .search-area .button{
 .item .detail .score{
     color: #ff5722;
 }
-
-
 .loading{
     padding: 5px;
     text-align: center;
@@ -105,162 +102,25 @@ section .search-area .button{
     100%{transform: rotate(360deg);}
 }
 
-footer{
-    font-size: 16px;
-    height: 45px;
-    width: 100%;
+footer {
     position: fixed;
     bottom: 0;
-    display: flex;
-    border-top: 1px solid #ccc;
-}
-footer div{
-    flex: 1;
-    text-align: center;
-    padding-top: 5px;
-    cursor: pointer;
-}
-footer div.active{
-    fill: #ff5722;
-    color: #ff5722;
-}
-footer span{
-    font-size: 12px;
-    line-height: 1.2px;
-    display: block;
-    padding-top: 9px;
-=======
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-a{
-    text-decoration: none;
-    color: inherit;
-}
-.icon {
-    width: 1em; height: 1em;
-    vertical-align: -0.15em;
-    fill: currentColor;
-    overflow: hidden;
-}
-html,body{
-    height: 100%;
-}
-body{
-    position: relative;
-    font-size: 12px;
-    /*line-height: 1.2px;*/
-    background: #fff;
-    fill: #ff5722;
-}
-main{
-    height: calc(100vh - 45px);
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
-}
-main section{
-    display: none;
-}
-main section:first-child{
-    display: block;
-    height: calc(100vh - 45px);
-    overflow: scroll;
-}
-main #search {
-    height: calc(100% - 45px);
-    padding: 10px;
-}
-section .search-area{
-    color: #333;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ccc;
-    position: relative;
-}
-section .search-area input {
-    width: calc(100% - 50px);
-    padding: 8px;
-    background-color: #eee;
-    border: none;
-    border-radius: 2px;
-    box-shadow: none;
-    outline: none;
-}
-section .search-area .button{
-    position: absolute;
-    right: 0;
-    padding: 7px 10px;
-    background: #FF5722;
-    color: #fff;
-    border-radius: 2px;
-    cursor: pointer;
-}
-.item{
-    border-bottom: 1px solid #ccc;
-    padding: 10px 0;
-}
-.item a{
-    /*display: block;*/
-    display: flex;
-}
-.item .cover,
-.item .cover img{
-    width: 70px;
-}
-.item .detail{
-    flex: 1;
-    padding-left: 10px;
-}
-.item .detail h2{
-    font-size: 16px;
-}
-.item .detail .extra{
-    color: #999;
-    margin-top: 4px;
-}
-.item .detail .score{
-    color: #ff5722;
-}
-
-
-.loading{
-    padding: 5px;
-    text-align: center;
-    display: none;
-}
-.loading .icon{
-    display: inline-block;
-    animation: 0.8s rotate linear infinite;
-}
-@keyframes rotate {
-    0%{transform: rotate(0deg);}
-    100%{transform: rotate(360deg);}
-}
-
-footer{
-    font-size: 16px;
     height: 45px;
     width: 100%;
-    position: fixed;
-    bottom: 0;
-    display: flex;
     border-top: 1px solid #ccc;
+    background-color: #fff;
+    display: flex;
 }
-footer div{
+footer>div {
     flex: 1;
-    text-align: center;
-    padding-top: 5px;
-    cursor: pointer;
-}
-footer div.active{
-    fill: #ff5722;
-    color: #ff5722;
-}
-footer span{
     font-size: 12px;
-    line-height: 1.2px;
+    text-align: center;
+    color: #666;
+    padding-top: 6px;
+}
+footer .active{
+    color: #FF5722;
+}
+footer>div>span{
     display: block;
-    padding-top: 9px;
->>>>>>> 7b95b7d97840312f6c3d5959b8a6090634c07326
 }
